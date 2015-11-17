@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwk-dT-9Hn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitten" translatesAutoresizingMaskIntoConstraints="NO" id="yW8-ZW-IPK">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="yW8-ZW-IPK" firstAttribute="top" secondItem="Dwk-dT-9Hn" secondAttribute="top" id="G5b-4o-M3U"/>
+                                    <constraint firstItem="yW8-ZW-IPK" firstAttribute="leading" secondItem="Dwk-dT-9Hn" secondAttribute="leading" id="cy4-y6-tHU"/>
+                                    <constraint firstAttribute="bottom" secondItem="yW8-ZW-IPK" secondAttribute="bottom" id="kFa-8d-5Gd"/>
+                                    <constraint firstAttribute="trailing" secondItem="yW8-ZW-IPK" secondAttribute="trailing" id="tY1-C0-3xC"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dwk-dT-9Hn" secondAttribute="bottom" id="08X-C9-hBv"/>
+                            <constraint firstItem="Dwk-dT-9Hn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1gF-HN-cI3"/>
+                            <constraint firstItem="yW8-ZW-IPK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="XdL-vV-dQg"/>
+                            <constraint firstAttribute="trailing" secondItem="Dwk-dT-9Hn" secondAttribute="trailing" id="Ykf-V0-wTc"/>
+                            <constraint firstItem="yW8-ZW-IPK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="bkY-cr-1Kg"/>
+                            <constraint firstItem="Dwk-dT-9Hn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="i8q-ls-aft"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="yW8-ZW-IPK" id="L8k-eV-cPN"/>
+                        <outlet property="scrollView" destination="Dwk-dT-9Hn" id="vNe-xE-Jg9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kitten" width="640" height="400"/>
+    </resources>
+</document>
