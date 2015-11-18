@@ -21,6 +21,8 @@
     self.scrollView.maximumZoomScale = 6.0;
     self.scrollView.contentSize = self.view.frame.size;
     self.scrollView.delegate = self;
+    self.scrollView.alwaysBounceHorizontal = YES;
+    self.scrollView.alwaysBounceVertical = YES;
 }
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
